@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Guanqiao Feng (凤冠乔), Year 3 student at Xi'an Jiaotong-Liverpool University, Academy of Artificial Intelligence and Advanced Technology." />
+  <meta name="author" content="Guanqiao Feng" />
+  <title>Guanqiao Feng · Personal Website</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236366f1'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EGF%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Back to top">
+        <span class="brand-mark">GF</span>
+        <span class="brand-text">Guanqiao&nbsp;Feng</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme" title="Switch colour theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.4M12 19v2.4M2.6 12h2.4M19 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3L17 7M7 17l-1.7 1.7"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 1 1 9.4 3.5a7 7 0 0 0 11.1 11.1Z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero container" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Xi'an Jiaotong-Liverpool University · Taicang</p>
+          <h1>
+            Guanqiao Feng
+            <span class="cn-name">凤冠乔</span>
+          </h1>
+          <p class="hero-role">
+            <span id="typedRole" class="typed"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-lead">
+            Year&nbsp;3 undergraduate at the Academy of Artificial Intelligence and Advanced Technology.
+            I explore how data moves through networks, how distributed systems process it at scale,
+            and how machine learning turns it into decisions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <ul class="hero-meta" aria-label="Quick facts">
+            <li><strong>Student ID</strong><span>2471032</span></li>
+            <li><strong>Programme</strong><span>BEng · AIAT</span></li>
+            <li><strong>Focus</strong><span>Networks · Big Data · ML</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal" aria-hidden="true">
+          <div class="avatar-ring">
+            <div class="avatar">
+              <svg viewBox="0 0 200 200" role="img" aria-label="Monogram avatar of Guanqiao Feng">
+                <defs>
+                  <linearGradient id="avatarGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#818cf8" />
+                    <stop offset="100%" stop-color="#22d3ee" />
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="96" fill="none" stroke="url(#avatarGradient)" stroke-width="2.5" stroke-dasharray="6 8" opacity="0.75" />
+                <text x="100" y="126" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="78" fill="url(#avatarGradient)">GF</text>
+              </svg>
+            </div>
+          </div>
+          <div class="hero-card-lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <p class="hero-card-caption">Learning · Building · Documenting</p>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section container" id="about">
+      <header class="section-head reveal">
+        <p class="section-index">01</p>
+        <h2>About me</h2>
+        <p class="section-sub">A short introduction</p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hello! I am <strong>Guanqiao Feng</strong> (凤冠乔), a third-year student at
+            Xi'an Jiaotong-Liverpool University's Entrepreneur College (Taicang), studying in the
+            Academy of Artificial Intelligence and Advanced Technology.
+          </p>
+          <p>
+            My interests sit at the intersection of <strong>networking</strong>,
+            <strong>distributed computing</strong> and <strong>machine learning</strong>.
+            Through coursework and self-driven projects I have built socket-based streaming
+            applications, MapReduce-style data pipelines, and small machine-learning experiments.
+            I enjoy understanding systems from the packet level up, and I care about measuring
+            things properly instead of guessing.
+          </p>
+          <p>
+            This site is itself part of a networking assignment: it is deployed with
+            GitHub Pages, then analysed with DNS lookups, <code>ping</code>,
+            <code>traceroute</code> and packet capture.
+          </p>
+        </div>
+
+        <aside class="about-panel reveal">
+          <h3>At a glance</h3>
+          <dl class="facts">
+            <div><dt>University</dt><dd>XJTLU (Taicang)</dd></div>
+            <div><dt>Academy</dt><dd>AIAT</dd></div>
+            <div><dt>Year</dt><dd>3rd year · 2026/27</dd></div>
+            <div><dt>Student ID</dt><dd>2471032</dd></div>
+            <div><dt>Languages</dt><dd>Chinese · English</dd></div>
+            <div><dt>Interests</dt><dd>Networks · Big data · ML</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section container" id="education">
+      <header class="section-head reveal">
+        <p class="section-index">02</p>
+        <h2>Education</h2>
+        <p class="section-sub">Where and what I study</p>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-card">
+            <p class="timeline-when">Year 3 · 2026/27</p>
+            <h3>BEng · Academy of Artificial Intelligence and Advanced Technology</h3>
+            <p class="timeline-where">Xi'an Jiaotong-Liverpool University, Entrepreneur College (Taicang)</p>
+            <p>
+              Core modules include networking and distributed computing, data structures and
+              algorithms, software engineering, database systems, and machine learning.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-card">
+            <p class="timeline-when">Year 1 – Year 2</p>
+            <h3>Foundations</h3>
+            <p class="timeline-where">Programming, mathematics and engineering fundamentals</p>
+            <p>
+              Built the foundations in Python and Java programming, discrete
+              mathematics, computer systems, and SQL with PostgreSQL.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section container" id="skills">
+      <header class="section-head reveal">
+        <p class="section-index">03</p>
+        <h2>Skills</h2>
+        <p class="section-sub">Tools I use and subjects I am learning</p>
+      </header>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <h3>Programming</h3>
+          <ul class="chips">
+            <li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>Bash</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Networking</h3>
+          <ul class="chips">
+            <li>TCP / UDP sockets</li><li>HTTP &amp; DNS</li><li>Wireshark</li><li>traceroute</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Data &amp; Distributed Systems</h3>
+          <ul class="chips">
+            <li>MapReduce</li><li>Hadoop HDFS</li><li>Apache Spark</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Machine Learning</h3>
+          <ul class="chips">
+            <li>scikit-learn</li><li>Regression</li><li>SVM / KNN</li><li>Model evaluation</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="skill-bars reveal">
+        <div class="skill-bar" data-level="85"><span class="skill-name">Python</span><span class="skill-track"><span class="skill-fill"></span></span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar" data-level="75"><span class="skill-name">SQL / Databases</span><span class="skill-track"><span class="skill-fill"></span></span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar" data-level="70"><span class="skill-name">Networking</span><span class="skill-track"><span class="skill-fill"></span></span><span class="skill-pct">70%</span></div>
+        <div class="skill-bar" data-level="65"><span class="skill-name">Spark / Hadoop</span><span class="skill-track"><span class="skill-fill"></span></span><span class="skill-pct">65%</span></div>
+        <div class="skill-bar" data-level="60"><span class="skill-name">Machine Learning</span><span class="skill-track"><span class="skill-fill"></span></span><span class="skill-pct">60%</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section container" id="projects">
+      <header class="section-head reveal">
+        <p class="section-index">04</p>
+        <h2>Projects</h2>
+        <p class="section-sub">Coursework and experiments I have built</p>
+      </header>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <p class="project-tag">Networking</p>
+          <h3>Video streaming over TCP vs UDP</h3>
+          <p>
+            A Python socket application that streams a video file frame by frame over
+            TCP and UDP, with a custom length-prefixed protocol for TCP and
+            fragmentation/reassembly for UDP. Performance is compared with Wireshark
+            captures: throughput, end-to-end latency, packet loss and retransmissions.
+          </p>
+          <ul class="chips small"><li>Python</li><li>sockets</li><li>Wireshark</li><li>tshark</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-tag">Distributed computing</p>
+          <h3>Word count with MapReduce and Spark</h3>
+          <p>
+            A pure-Python MapReduce implementation (map → shuffle/partition → reduce) compared
+            with Hadoop MapReduce and Apache Spark on the same dataset, focusing on programming
+            effort, execution behaviour and scalability.
+          </p>
+          <ul class="chips small"><li>MapReduce</li><li>Hadoop</li><li>Spark</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-tag">Machine learning</p>
+          <h3>Classification experiments</h3>
+          <p>
+            Supervised learning coursework covering linear and logistic regression, SVM,
+            KNN, kernels and decision trees, with cross-validation and model selection
+            on tabular datasets.
+          </p>
+          <ul class="chips small"><li>scikit-learn</li><li>Cross-validation</li><li>Evaluation</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-tag">Web · This site</p>
+          <h3>Personal website on GitHub Pages</h3>
+          <p>
+            A responsive, dependency-free static site (HTML, CSS, JavaScript) deployed with
+            GitHub Pages, then used as the target of a network analysis exercise: DNS
+            resolution, ping latency, traceroute path and packet-level inspection.
+          </p>
+          <ul class="chips small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section container" id="contact">
+      <header class="section-head reveal">
+        <p class="section-index">05</p>
+        <h2>Contact</h2>
+        <p class="section-sub">Let's connect</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Email</h3>
+          <p><a href="mailto:2471032@student.xjtlu.edu.cn">2471032@student.xjtlu.edu.cn</a></p>
+          <p class="muted">University account · best way to reach me</p>
+        </div>
+        <div class="contact-card reveal">
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/GanqiaoFeng" target="_blank" rel="noopener noreferrer">github.com/GanqiaoFeng</a></p>
+          <p class="muted">Source code and coursework repositories</p>
+        </div>
+        <div class="contact-card reveal">
+          <h3>Location</h3>
+          <p>Taicang, Jiangsu, China</p>
+          <p class="muted">XJTLU Entrepreneur College</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Guanqiao Feng · Built with plain HTML, CSS and JavaScript.</p>
+      <p class="footer-note">CSI205TC Networking and Distributed Computing · Coursework</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
